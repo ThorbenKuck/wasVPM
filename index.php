@@ -16,6 +16,7 @@ if (session_status () !== PHP_SESSION_ACTIVE)
 </head>
 <?php
 
+
 require_once 'Main.class.php';
 
 Main::loadSocket();
