@@ -25,8 +25,6 @@ if(! function_exists('Main\main')) {
     die("Der Socket konnte nicht geladen werden! Stellen sie sicher, dass der Socket vorhanden ist!");
 }
 
-require 'test.php';
-
 ob_end_flush();
 
 Main\debug_input(["[Title]: TODO!", "--none--"], false);
