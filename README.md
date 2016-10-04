@@ -94,9 +94,12 @@ dieses tatsächlich zu nutzen!
 
 Sollte es erwünscht sein, dass der aktuelle Zustand automatisch an das Endgerät geschickt wird,
 müssen wir noch ein paar dinge tun.
+
 0. Stell sicher, dass dein Endgerät auf http-get-request entsprechend reagiert.
+
 1. Öffne die Konfiguration des vpm.mod (mods/vpm.mod/config.php) und ändere die letzte Konstante
 auf die IP-Adresse des Endgerätes.
+
 2. Öffne den Crawler (mods/vpm.mod/connect/index.php) und suche die Zeile
 <code>$response = send_request($ip, ...</code>. Die Parameter, welche bei dem get-request übergeben
 werden, sind das 2. Argument dieses funktions-aufrufes. Du kannst das Array löschen und deine eigenen
