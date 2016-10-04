@@ -17,7 +17,7 @@ function get_crawler_prefix() : string {
 	return "crawler@[" . date ('H') . ":" . date ('i') . ":" . date ('s') . "," . date('u') . ":" . ++$counter . "]$ ";
 }
 
-function send_request(string $ip, array $get_conten) : string {
+function send_request(string $ip, array $get_conten = []) : string {
 	if(strpos($ip, 'http://') === false) {
 		$ip = 'http://' . $ip . "/?";
 	} else {
@@ -132,7 +132,7 @@ echo get_crawler_prefix() . "done .. " . "<br>";
 
 if(is_int($inserted_dates_states)) {
 	$hrstate = $core[$inserted_dates_states][5] == 2 ? "eingeschaltet" : "ausgeschaltet";
-	\Main\log("Auf Grund von \"" . $core[$inserted_dates_states][0] . "\" sind die Monitore " . $hrstate, "modern", $custom_log_path);
+	\Main\log("Auf Grund von \"" . $core[$inserted_dates_states][0] . "\" sind die Monitore " . $hrstate, "crawler", $custom_log_path);
 } else {
 	if($normal_day_stand) {
 		\Main\log("Die Monitore sind eingeschaltet", "crawler", $custom_log_path);
