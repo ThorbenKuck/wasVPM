@@ -33,13 +33,6 @@ CREATE TABLE IF NOT EXISTS `Logins` (
   `Hash` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Daten für Tabelle `Logins`
---
-
-INSERT INTO `Logins` (`id`, `Hash`) VALUES
-(1, 'GqS&ixYR6SfoorCu/&.Uz7"bWB');
-
 -- --------------------------------------------------------
 
 --

@@ -105,7 +105,7 @@ Main\init();
 
 echo get_crawler_prefix() . "setting_infos .. [OK]" . "<br>";
 
-\Main\set_info("root_path", "/var/www/html/was/");
+\Main\set_info("root_path", $root_path);
 \Main\set_info("mod_folder_root_path", $path_to_vpm_core);
 print_r(\Main\info()); echo "<br>";
 

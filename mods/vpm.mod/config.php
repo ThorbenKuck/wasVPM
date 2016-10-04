@@ -44,6 +44,6 @@ if (! defined ( 'ENDUHR' )) {
 }
 
 if (! defined ( 'CONNECTION_IP' )) {
-	define ( 'CONNECTION_IP', "192.168.178.17" );
-	\Main\set_new_info('connection_ip', "192.168.178.17");
+	define ( 'CONNECTION_IP', "127.0.0.1/test2.php" );
+	\Main\set_new_info('connection_ip', CONNECTION_IP);
 }

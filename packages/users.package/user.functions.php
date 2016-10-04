@@ -301,7 +301,7 @@ function get_user_permissions () {
 
 // #################Later###################
 
-function create_new_user ($username, $password, $email, $permissions) {
+function create_new_user ($username, $password, $permissions) {
 	if (!is_logdin () || (!is_admin () || !is_root ()))
 		die (return_new_warning ("Sie haben keine Berechtigung, dies zu tun!"));
 
@@ -331,10 +331,10 @@ function delete_user ($username) {
 	// is_logdin()
 	// ####################################
 	// is_admin()
-	// allow to create $permissions > 500 && $permissions <= 1500;
+	// allow to delete $permissions > 500 && $permissions <= 1500;
 	// ####################################
 	// is_root()
-	// allow to create $permissions > 500 && $permissions <= 4500;
+	// allow to delete $permissions > 500 && $permissions <= 4500;
 	// ####################################
 	// if not admin or root return error
 	// ####################################
