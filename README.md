@@ -10,7 +10,7 @@ with many features like an automated time-schedule.
 ####*Why is this project not fully translated to english?*
 
 This project was created on base of the WAS. 
-As soon as i get this up and running in github, i will link this project here.
+~~As soon as i get this up and running in github, i will link this project here.~~ You find it [here](https://github.com/ThorbenKuck/WAS)
 But this project was original created for a german school and i am (at the moment)
 way to busy with the university. I am sorry for that and as soon as i have time, i will correct that!
 
@@ -27,9 +27,9 @@ zu automatisisren.
 
 Die Website ist auf Basis von AJAX mit hilfe von JQuerry und viel PHP entwickelt worden.
 Dabei liegt das haupt-augenmerk jedoch auf PHP. So fungiert JQuerry lediglich als einfachere Möglichkeit,
-Dynamisch PHP nach zu laden. Des Weiteren basiert der Kern auf dem WAS-Framework (dem WebApplicationSystem-Framework)
-mit dem standard socket. Leider habe ich noch keine Zeit gefunden, dieses auf GitHub hoch zu laden, 
-aber sobald ich Zeit habe, werde ich das nach holen.
+Dynamisch PHP nach zu laden. Des Weiteren basiert der Kern auf dem [WAS-Framework (dem WebApplicationSystem-Framework)](https://github.com/ThorbenKuck/WAS)
+mit dem standard socket. ~~Leider habe ich noch keine Zeit gefunden, dieses auf GitHub hoch zu laden, 
+aber sobald ich Zeit habe, werde ich das nach holen.~~
 
 ## Zu den packages und mods
 
