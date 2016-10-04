@@ -10,7 +10,7 @@ with many features like an automated time-schedule.
 ####*Why is this project not fully translated to english?*
 
 This project was created on base of the WAS. 
-~~As soon as i get this up and running in github, i will link this project here.~~ You find it [here](https://github.com/ThorbenKuck/WAS)
+~~As soon as i get this up and running in github, i will link this project here.~~ You find it [here](https://github.com/ThorbenKuck/WAS).
 But this project was original created for a german school and i am (at the moment)
 way to busy with the university. I am sorry for that and as soon as i have time, i will correct that!
 
