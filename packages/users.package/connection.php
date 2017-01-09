@@ -3,7 +3,7 @@ if(!defined('DB_HOST')) {
 	define('DB_TYPE', 'mysql');
 	define('DB_HOST', 'localhost');
 	define('DB_USER', 'root');
-	define('DB_PASSWORD', 'JHP4361latho');
+	define('DB_PASSWORD', '');
 	define('DB_DATABASE', 'vpm');
 }
 

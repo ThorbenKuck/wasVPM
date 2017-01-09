@@ -130,12 +130,16 @@ echo get_crawler_prefix() . "the inserted stand is: ";  var_dump($inserted_dates
 echo get_crawler_prefix() . "logging .. " . "<br>";
 echo get_crawler_prefix() . "done .. " . "<br>";
 
+$monitors_on = false;
+
 if(is_int($inserted_dates_states)) {
 	$hrstate = $core[$inserted_dates_states][5] == 2 ? "eingeschaltet" : "ausgeschaltet";
 	\Main\log("Auf Grund von \"" . $core[$inserted_dates_states][0] . "\" sind die Monitore " . $hrstate, "crawler", $custom_log_path);
+	$monitors_on = $hrstate == "eingeschaltet" ? true : false;
 } else {
 	if($normal_day_stand) {
 		\Main\log("Die Monitore sind eingeschaltet", "crawler", $custom_log_path);
+		$monitors_on = true;
 	} else if(!$normal_day_stand) {
 		\Main\log("Die Monitore sind ausgeschaltet", "crawler",$custom_log_path);
 	}
@@ -143,7 +147,7 @@ if(is_int($inserted_dates_states)) {
 
 echo get_crawler_prefix() . "sending http_get_request to " . $ip . " .. " . "<br>";
 
-$response = send_request($ip, ["test" => "test", "crawler" => "true", "current_id" => $counter, "main_id" => get_crawler_prefix()]);
+$response = send_request($ip, ["monitor" => $monitors_on ? "1111" : "0000", "crawler" => "true", "current_id" => $counter, "main_id" => get_crawler_prefix()]);
 --$counter;
 
 echo get_crawler_prefix() . "done .. " . "<br>";
